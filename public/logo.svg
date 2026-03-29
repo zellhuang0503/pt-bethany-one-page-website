@@ -1,0 +1,9 @@
+<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Abstract leaf & waterdrop silhouette -->
+  <path d="M16 2C16 2 28 10 28 20C28 26.6274 22.6274 32 16 32C9.37258 32 4 26.6274 4 20C4 10 16 2 16 2Z" fill="#5a5a40" fill-opacity="0.2" />
+  <!-- Inner leaf vein and structure -->
+  <path d="M16 8C16 8 24 14 24 21C24 25.4183 20.4183 29 16 29C11.5817 29 8 25.4183 8 21C8 14 16 8 16 8Z" stroke="#5a5a40" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Subtle central cross -->
+  <path d="M16 14V29" stroke="#5a5a40" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M12 20H20" stroke="#5a5a40" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

@@ -19,6 +19,18 @@ import {
   ChevronDown
 } from 'lucide-react';
 
+const LogoIcon = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    {/* Abstract leaf & waterdrop silhouette */}
+    <path d="M16 2C16 2 28 10 28 20C28 26.6274 22.6274 32 16 32C9.37258 32 4 26.6274 4 20C4 10 16 2 16 2Z" className="fill-current opacity-20" />
+    {/* Inner leaf vein and structure */}
+    <path d="M16 8C16 8 24 14 24 21C24 25.4183 20.4183 29 16 29C11.5817 29 8 25.4183 8 21C8 14 16 8 16 8Z" className="stroke-current" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    {/* Subtle central cross */}
+    <path d="M16 14V29" className="stroke-current" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M12 20H20" className="stroke-current" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
 const Section = ({ children, className = "", id = "" }: { children: React.ReactNode, className?: string, id?: string }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
@@ -45,9 +57,9 @@ export default function App() {
     <div className="min-h-screen selection:bg-bethany-olive selection:text-white">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 md:px-12 bg-bethany-cream/80 backdrop-blur-md border-b border-bethany-earth/10">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-bethany-olive rounded-full flex items-center justify-center text-white font-serif font-bold">B</div>
-          <span className="font-serif font-bold text-lg tracking-wider">屏東伯大尼靈修院</span>
+        <div className="flex items-center gap-3">
+          <LogoIcon className="w-8 h-8 text-bethany-olive" />
+          <span className="font-serif font-bold text-lg tracking-wider">屏東伯大尼靈修園</span>
         </div>
         <div className="hidden md:flex gap-8 text-sm uppercase tracking-widest font-medium">
           <a href="#about" className="hover:text-bethany-olive transition-colors">關於</a>
@@ -71,10 +83,9 @@ export default function App() {
           className="absolute inset-0 z-0"
         >
           <img 
-            src="https://picsum.photos/seed/bethany-garden/1920/1080?blur=2" 
-            alt="Bethany Garden" 
+            src="/二期外觀-1.jpg" 
+            alt="Bethany Retreat Garden" 
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-bethany-ink/40 via-transparent to-bethany-cream"></div>
         </motion.div>
@@ -93,7 +104,7 @@ export default function App() {
               <span className="italic font-light">在寧靜中聽見神</span>
             </h1>
             <p className="text-white/90 text-lg md:text-xl font-light tracking-widest mb-12 max-w-2xl mx-auto leading-relaxed">
-              屏東伯大尼靈修院，為您預備一個歸回安息、重新得力的優質空間。
+              屏東伯大尼靈修園，為您預備一個歸回安息、重新得力的優質空間。
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
               <a 
@@ -141,7 +152,7 @@ export default function App() {
               歸回安息，<br/>平靜安穩。
             </h2>
             <p className="text-bethany-ink/70 text-lg leading-relaxed mb-8">
-              在繁忙的現代生活中，我們需要一個「曠野」來與主面對面。屏東伯大尼靈修院座落於南台灣的寧靜角落，提供一個遠離塵囂、親近自然的環境，讓您的心靈得以重新對焦。
+              在繁忙的現代生活中，我們需要一個「曠野」來與主面對面。屏東伯大尼靈修園座落於南台灣的寧靜角落，提供一個遠離塵囂、親近自然的環境，讓您的心靈得以重新對焦。
             </p>
             <div className="space-y-6">
               <div className="flex gap-4">
@@ -227,10 +238,9 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             <div className="md:col-span-8 group relative overflow-hidden rounded-[2.5rem] aspect-[16/9]">
               <img 
-                src="https://picsum.photos/seed/chapel/1200/800" 
+                src="/二期外觀-1.jpg" 
                 alt="Chapel" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-bethany-ink/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
                 <div className="text-white">
@@ -241,10 +251,9 @@ export default function App() {
             </div>
             <div className="md:col-span-4 group relative overflow-hidden rounded-[2.5rem] aspect-[4/5]">
               <img 
-                src="https://picsum.photos/seed/room/600/800" 
+                src="/20250814_松柏家園_一期_床(12).jpg" 
                 alt="Room" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-bethany-ink/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
                 <div className="text-white">
@@ -255,10 +264,9 @@ export default function App() {
             </div>
             <div className="md:col-span-4 group relative overflow-hidden rounded-[2.5rem] aspect-[4/5]">
               <img 
-                src="https://picsum.photos/seed/fellowship/600/800" 
+                src="/4283F46A-7197-468D-91D4-0380FC97D5E6.jpg" 
                 alt="Fellowship" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-bethany-ink/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
                 <div className="text-white">
@@ -269,10 +277,9 @@ export default function App() {
             </div>
             <div className="md:col-span-8 group relative overflow-hidden rounded-[2.5rem] aspect-[16/9]">
               <img 
-                src="https://picsum.photos/seed/trail/1200/800" 
+                src="/師母拍松柏水池.jpg" 
                 alt="Trail" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-bethany-ink/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
                 <div className="text-white">
@@ -298,7 +305,7 @@ export default function App() {
                 Upcoming Event
               </span>
               <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
-                屏東伯大尼靈修院<br/>
+                屏東伯大尼靈修園<br/>
                 <span className="text-bethany-cream italic">獻堂感恩禮拜</span>
               </h2>
               
@@ -331,7 +338,7 @@ export default function App() {
                     <div>
                       <p className="text-sm opacity-60 uppercase tracking-widest">地點</p>
                       <p className="text-xl font-bold leading-relaxed">
-                        屏東伯大尼靈修院<br/>
+                        屏東伯大尼靈修園<br/>
                         <span className="text-base font-normal opacity-80">屏東市盛豐路586號</span>
                       </p>
                     </div>
@@ -427,9 +434,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-12 mb-20">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white font-serif font-bold">B</div>
+              <LogoIcon className="w-12 h-12 text-white/90" />
               <div>
-                <h4 className="text-white font-serif text-xl font-bold tracking-widest">屏東伯大尼靈修院</h4>
+                <h4 className="text-white font-serif text-xl font-bold tracking-widest">屏東伯大尼靈修園</h4>
                 <p className="text-sm">Bethany Retreat Garden</p>
               </div>
             </div>
@@ -442,7 +449,7 @@ export default function App() {
           </div>
           
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-12 border-t border-white/5 text-xs">
-            <p>© 2026 屏東伯大尼靈修院. All Rights Reserved.</p>
+            <p>© 2026 屏東伯大尼靈修園. All Rights Reserved.</p>
             <p className="italic">「你們得救在乎歸回安息，得力在乎平靜安穩。」— 以賽亞書 30:15</p>
           </div>
         </div>
