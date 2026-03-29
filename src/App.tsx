@@ -84,7 +84,7 @@ export default function App() {
         >
           <img 
             src="/二期外觀-1.jpg" 
-            alt="Bethany Retreat Garden" 
+            alt="PT-Bethany Retreat Garden" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-bethany-ink/40 via-transparent to-bethany-cream"></div>
@@ -97,7 +97,7 @@ export default function App() {
             transition={{ duration: 1, delay: 0.2 }}
           >
             <span className="inline-block px-4 py-1 border border-white/30 rounded-full text-white text-xs tracking-[0.3em] uppercase mb-8 backdrop-blur-sm">
-              Bethany Retreat Garden
+              PT-Bethany Retreat Garden
             </span>
             <h1 className="text-5xl md:text-8xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               走進南台灣曠野<br/>
@@ -437,7 +437,7 @@ export default function App() {
               <LogoIcon className="w-12 h-12 text-white/90" />
               <div>
                 <h4 className="text-white font-serif text-xl font-bold tracking-widest">屏東伯大尼靈修園</h4>
-                <p className="text-sm">Bethany Retreat Garden</p>
+                <p className="text-sm">PT-Bethany Retreat Garden</p>
               </div>
             </div>
             <div className="flex gap-12 text-sm uppercase tracking-widest font-medium">
