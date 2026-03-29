@@ -394,7 +394,7 @@ export default function App() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-1">官方網站</h4>
-                  <a href="https://www.bethany-pt.org/" target="_blank" className="text-bethany-olive hover:underline">www.bethany-pt.org</a>
+                  <a href="https://retreat.pt-bethany.org.tw/" target="_blank" className="text-bethany-olive hover:underline">retreat.pt-bethany.org.tw</a>
                 </div>
               </div>
             </div>
