@@ -133,10 +133,9 @@ export default function App() {
           <div className="relative">
             <div className="aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl">
               <img 
-                src="https://picsum.photos/seed/meditation/800/1200" 
+                src="/036A5482.jpg" 
                 alt="Meditation" 
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
               />
             </div>
             <div className="absolute -bottom-8 -right-8 bg-bethany-olive p-8 rounded-3xl text-white shadow-xl hidden md:block max-w-[240px]">
