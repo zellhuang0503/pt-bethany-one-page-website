@@ -346,9 +346,9 @@ export default function App() {
               </div>
               
               <div className="flex flex-col md:flex-row gap-6">
-                <button className="bg-white text-bethany-olive px-10 py-4 rounded-full font-bold text-lg hover:bg-bethany-cream transition-all shadow-xl">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwJ9ffbeFpixQjyndJ3X3RoGy7IcGARy77FN2r7g24w6rHQ/viewform" target="_blank" rel="noopener noreferrer" className="bg-white text-bethany-olive px-10 py-4 rounded-full font-bold text-lg hover:bg-bethany-cream transition-all shadow-xl text-center">
                   我要參加
-                </button>
+                </a>
                 <p className="text-sm opacity-70 max-w-xs leading-relaxed">
                   誠摯邀請您一同見證神的榮耀，分享這份喜悅與感恩。
                 </p>
