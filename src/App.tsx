@@ -147,10 +147,10 @@ export default function App() {
           </div>
           <div>
             <span className="text-bethany-olive font-medium tracking-[0.2em] uppercase text-sm mb-4 block">Our Philosophy</span>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight text-bethany-ink">
+            <h2 className="text-2xl md:text-5xl font-bold mb-6 md:mb-8 leading-tight text-bethany-ink">
               歸回安息，<br/>平靜安穩。
             </h2>
-            <p className="text-bethany-ink/70 text-lg leading-relaxed mb-8">
+            <p className="text-bethany-ink/70 text-sm md:text-lg leading-relaxed mb-6 md:mb-8">
               在繁忙的現代生活中，我們需要一個「曠野」來與主面對面。屏東伯大尼靈修園座落於南台灣的寧靜角落，提供一個遠離塵囂、親近自然的環境，讓您的心靈得以重新對焦。
             </p>
             <div className="space-y-6">
@@ -159,8 +159,8 @@ export default function App() {
                   <Leaf className="w-6 h-6 text-bethany-olive" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg mb-1">自然與寧靜</h4>
-                  <p className="text-bethany-ink/60">廣闊的園區與自然步道，是默想與禱告的最佳場所。</p>
+                  <h4 className="font-bold text-base md:text-lg mb-1">自然與寧靜</h4>
+                  <p className="text-bethany-ink/60 text-sm md:text-base">廣闊的園區與自然步道，是默想與禱告的最佳場所。</p>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -168,8 +168,8 @@ export default function App() {
                   <Moon className="w-6 h-6 text-bethany-olive" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg mb-1">安靜禱告</h4>
-                  <p className="text-bethany-ink/60">為牧者與信徒提供專屬的安靜空間，重新聽見神的聲音。</p>
+                  <h4 className="font-bold text-base md:text-lg mb-1">安靜禱告</h4>
+                  <p className="text-bethany-ink/60 text-sm md:text-base">為牧者與信徒提供專屬的安靜空間，重新聽見神的聲音。</p>
                 </div>
               </div>
             </div>
@@ -181,7 +181,7 @@ export default function App() {
       <Section id="services" className="bg-bethany-cream">
         <div className="text-center mb-16">
           <span className="text-bethany-olive font-medium tracking-[0.2em] uppercase text-sm mb-4 block">What We Offer</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-bethany-ink">靈修與聚會服務</h2>
+          <h2 className="text-2xl md:text-5xl font-bold text-bethany-ink">靈修與聚會服務</h2>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
@@ -211,8 +211,8 @@ export default function App() {
               <div className="w-16 h-16 bg-bethany-cream rounded-2xl flex items-center justify-center text-bethany-olive mb-8 group-hover:bg-bethany-olive group-hover:text-white transition-colors duration-500">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-bold mb-4">{item.title}</h3>
-              <p className="text-bethany-ink/60 leading-relaxed">{item.desc}</p>
+              <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">{item.title}</h3>
+              <p className="text-bethany-ink/60 leading-relaxed text-sm md:text-base">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -224,8 +224,8 @@ export default function App() {
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div className="max-w-2xl">
               <span className="text-bethany-olive font-medium tracking-[0.2em] uppercase text-sm mb-4 block">Our Spaces</span>
-              <h2 className="text-4xl md:text-5xl font-bold text-bethany-ink">優質的環境與設施</h2>
-              <p className="text-bethany-ink/60 mt-6 text-lg">我們精心打造每一個角落，只為讓您能全然專注於神。</p>
+              <h2 className="text-2xl md:text-5xl font-bold text-bethany-ink">優質的環境與設施</h2>
+              <p className="text-bethany-ink/60 mt-4 md:mt-6 text-sm md:text-lg">我們精心打造每一個角落，只為讓您能全然專注於神。</p>
             </div>
             <div className="flex gap-4">
               <div className="px-6 py-3 border border-bethany-earth/20 rounded-full text-sm font-medium">舒適住宿</div>
@@ -409,7 +409,7 @@ export default function App() {
               <span className="inline-block px-4 py-1 bg-white/20 rounded-full text-xs tracking-[0.3em] uppercase mb-8">
                 Upcoming Event
               </span>
-              <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+              <h2 className="text-2xl md:text-6xl font-bold mb-6 md:mb-8 leading-tight">
                 屏東伯大尼靈修園<br/>
                 <span className="text-bethany-cream italic">獻堂感恩禮拜</span>
               </h2>
@@ -422,7 +422,7 @@ export default function App() {
                     </div>
                     <div>
                       <p className="text-sm opacity-60 uppercase tracking-widest">日期</p>
-                      <p className="text-xl font-bold">2026年5月1日 (五)</p>
+                      <p className="text-base md:text-xl font-bold">2026年5月1日 (五)</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -431,7 +431,7 @@ export default function App() {
                     </div>
                     <div>
                       <p className="text-sm opacity-60 uppercase tracking-widest">時間</p>
-                      <p className="text-xl font-bold">上午 10:00</p>
+                      <p className="text-base md:text-xl font-bold">上午 10:00</p>
                     </div>
                   </div>
                 </div>
@@ -442,9 +442,9 @@ export default function App() {
                     </div>
                     <div>
                       <p className="text-sm opacity-60 uppercase tracking-widest">地點</p>
-                      <p className="text-xl font-bold leading-relaxed">
+                      <p className="text-base md:text-xl font-bold leading-relaxed">
                         屏東伯大尼靈修園<br/>
-                        <span className="text-base font-normal opacity-80">屏東市盛豐路586號</span>
+                        <span className="text-sm md:text-base font-normal opacity-80">屏東市盛豐路586號</span>
                       </p>
                     </div>
                   </div>
@@ -452,7 +452,7 @@ export default function App() {
               </div>
               
               <div className="flex flex-col md:flex-row gap-6">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwJ9ffbeFpixQjyndJ3X3RoGy7IcGARy77FN2r7g24w6rHQ/viewform" target="_blank" rel="noopener noreferrer" className="bg-white text-bethany-olive px-10 py-4 rounded-full font-bold text-lg hover:bg-bethany-cream transition-all shadow-xl text-center">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCwJ9ffbeFpixQjyndJ3X3RoGy7IcGARy77FN2r7g24w6rHQ/viewform" target="_blank" rel="noopener noreferrer" className="bg-white text-bethany-olive px-8 py-3 md:px-10 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-bethany-cream transition-all shadow-xl text-center">
                   我要參加
                 </a>
                 <p className="text-sm opacity-70 max-w-xs leading-relaxed">
@@ -469,8 +469,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20">
           <div>
             <span className="text-bethany-olive font-medium tracking-[0.2em] uppercase text-sm mb-4 block">Contact Us</span>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-bethany-ink">聯絡我們</h2>
-            <p className="text-bethany-ink/60 text-lg mb-12">
+            <h2 className="text-2xl md:text-5xl font-bold mb-6 md:mb-8 text-bethany-ink">聯絡我們</h2>
+            <p className="text-bethany-ink/60 text-sm md:text-lg mb-8 md:mb-12">
               如果您有任何關於聚會、靈修或空間預約的需求，歡迎隨時與我們聯繫。
             </p>
             
@@ -480,7 +480,7 @@ export default function App() {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg mb-1">院址</h4>
+                  <h4 className="font-bold text-base md:text-lg mb-1">院址</h4>
                   <p className="text-bethany-ink/60">900 屏東縣屏東市盛豐路586號</p>
                 </div>
               </div>
@@ -489,7 +489,7 @@ export default function App() {
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg mb-1">電話</h4>
+                  <h4 className="font-bold text-base md:text-lg mb-1">電話</h4>
                   <p className="text-bethany-ink/60">08-736-7264 (轉社工室)</p>
                 </div>
               </div>
@@ -498,7 +498,7 @@ export default function App() {
                   <Globe className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg mb-1">官方網站</h4>
+                  <h4 className="font-bold text-base md:text-lg mb-1">官方網站</h4>
                   <a href="https://retreat.pt-bethany.org.tw/" target="_blank" className="text-bethany-olive hover:underline">retreat.pt-bethany.org.tw</a>
                 </div>
               </div>
@@ -506,7 +506,7 @@ export default function App() {
           </div>
           
           <div className="bg-bethany-cream p-10 md:p-16 rounded-[3rem]">
-            <h3 className="text-2xl font-bold mb-8">預約諮詢</h3>
+            <h3 className="text-xl md:text-2xl font-bold mb-6 md:mb-8">預約諮詢</h3>
             <form className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
@@ -526,7 +526,7 @@ export default function App() {
                 <label className="text-xs uppercase tracking-widest font-bold opacity-50">預約需求</label>
                 <textarea className="w-full bg-white border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-bethany-olive outline-none h-32" placeholder="請簡述您的需求（如：預計人數、日期等）"></textarea>
               </div>
-              <button className="w-full bg-bethany-olive text-white py-5 rounded-2xl font-bold text-lg hover:bg-bethany-earth transition-all shadow-xl shadow-bethany-olive/20">
+              <button className="w-full bg-bethany-olive text-white py-4 md:py-5 rounded-2xl font-bold text-base md:text-lg hover:bg-bethany-earth transition-all shadow-xl shadow-bethany-olive/20">
                 送出預約申請
               </button>
             </form>
@@ -541,7 +541,7 @@ export default function App() {
             <div className="flex items-center gap-4">
               <LogoIcon className="w-12 h-12 text-white/90" />
               <div>
-                <h4 className="text-white font-serif text-xl font-bold tracking-widest">屏東伯大尼靈修園</h4>
+                <h4 className="text-white font-serif text-base md:text-xl font-bold tracking-widest">屏東伯大尼靈修園</h4>
                 <p className="text-sm">PT-Bethany Retreat Garden</p>
               </div>
             </div>
