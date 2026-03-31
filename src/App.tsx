@@ -508,7 +508,7 @@ export default function App() {
           <div className="bg-bethany-cream p-10 md:p-16 rounded-[3rem]">
             <h3 className="text-xl md:text-2xl font-bold mb-6 md:mb-8">預約諮詢</h3>
             <form className="space-y-6">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label className="text-xs uppercase tracking-widest font-bold opacity-50">姓名</label>
                   <input type="text" className="w-full bg-white border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-bethany-olive outline-none" placeholder="您的姓名" />
