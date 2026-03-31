@@ -83,7 +83,7 @@ export default function App() {
           className="absolute inset-0 z-0"
         >
           <img 
-            src="/二期外觀-1.jpg" 
+            src="/facilities-chapel.jpg" 
             alt="PT-Bethany Retreat Garden" 
             className="w-full h-full object-cover"
           />
@@ -237,7 +237,7 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             <div className="md:col-span-8 group relative overflow-hidden rounded-[2.5rem] aspect-[16/9]">
               <img 
-                src="/二期外觀-1.jpg" 
+                src="/facilities-chapel.jpg" 
                 alt="Chapel" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -250,7 +250,7 @@ export default function App() {
             </div>
             <div className="md:col-span-4 group relative overflow-hidden rounded-[2.5rem] aspect-[4/5]">
               <img 
-                src="/20250814_松柏家園_一期_床(12).jpg" 
+                src="/facilities-room.jpg" 
                 alt="Room" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -276,7 +276,7 @@ export default function App() {
             </div>
             <div className="md:col-span-8 group relative overflow-hidden rounded-[2.5rem] aspect-[16/9]">
               <img 
-                src="/師母拍松柏水池.jpg" 
+                src="/facilities-trail.jpg" 
                 alt="Trail" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
