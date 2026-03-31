@@ -99,11 +99,11 @@ export default function App() {
             <span className="inline-block px-4 py-1 border border-white/30 rounded-full text-white text-xs tracking-[0.3em] uppercase mb-8 backdrop-blur-sm">
               PT-Bethany Retreat Garden
             </span>
-            <h1 className="text-5xl md:text-8xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+            <h1 className="text-3xl md:text-8xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               走進南台灣曠野<br/>
               <span className="italic font-light">在寧靜中聽見神</span>
             </h1>
-            <p className="text-white/90 text-lg md:text-xl font-light tracking-widest mb-12 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-white/90 text-sm md:text-xl font-light tracking-wide md:tracking-widest mb-12 max-w-2xl mx-auto leading-relaxed">
               屏東伯大尼靈修園，為您預備一個歸回安息、重新得力的優質空間。
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
