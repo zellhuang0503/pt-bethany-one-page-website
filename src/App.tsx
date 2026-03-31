@@ -33,7 +33,7 @@ const LogoIcon = ({ className = "" }: { className?: string }) => (
 
 const Section = ({ children, className = "", id = "" }: { children: React.ReactNode, className?: string, id?: string }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const isInView = useInView(ref, { once: true, amount: 0.05 });
 
   return (
     <section id={id} ref={ref} className={`section-padding ${className}`}>
