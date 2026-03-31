@@ -4,6 +4,7 @@
  */
 
 import React, { useEffect, useRef } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import { motion, useScroll, useTransform, useInView } from 'motion/react';
 import { 
   MapPin, 
@@ -47,6 +48,58 @@ const Section = ({ children, className = "", id = "" }: { children: React.ReactN
     </section>
   );
 };
+
+function ContactForm() {
+  const [state, handleSubmit] = useForm('meepkzwr');
+
+  if (state.succeeded) {
+    return (
+      <div className="bg-bethany-cream p-10 md:p-16 rounded-[3rem] flex items-center justify-center min-h-[300px]">
+        <div className="text-center">
+          <div className="w-16 h-16 bg-bethany-olive rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h3 className="text-xl md:text-2xl font-bold mb-3 text-bethany-ink">感謝您的預約申請！</h3>
+          <p className="text-bethany-ink/60 text-sm md:text-base">我們將盡快與您聯繫，願主賜福。</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="bg-bethany-cream p-10 md:p-16 rounded-[3rem]">
+      <h3 className="text-xl md:text-2xl font-bold mb-6 md:mb-8">預約諮詢</h3>
+      <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="space-y-2">
+            <label className="text-xs uppercase tracking-widest font-bold opacity-50">姓名</label>
+            <input type="text" name="name" required className="w-full bg-white border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-bethany-olive outline-none" placeholder="您的姓名" />
+            <ValidationError field="name" errors={state.errors} className="text-red-500 text-xs" />
+          </div>
+          <div className="space-y-2">
+            <label className="text-xs uppercase tracking-widest font-bold opacity-50">電話</label>
+            <input type="tel" name="phone" required className="w-full bg-white border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-bethany-olive outline-none" placeholder="聯絡電話" />
+            <ValidationError field="phone" errors={state.errors} className="text-red-500 text-xs" />
+          </div>
+        </div>
+        <div className="space-y-2">
+          <label className="text-xs uppercase tracking-widest font-bold opacity-50">單位 / 教會</label>
+          <input type="text" name="organization" className="w-full bg-white border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-bethany-olive outline-none" placeholder="所屬單位" />
+        </div>
+        <div className="space-y-2">
+          <label className="text-xs uppercase tracking-widest font-bold opacity-50">預約需求</label>
+          <textarea name="message" required className="w-full bg-white border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-bethany-olive outline-none h-32" placeholder="請簡述您的需求（如：預計人數、日期等）"></textarea>
+          <ValidationError field="message" errors={state.errors} className="text-red-500 text-xs" />
+        </div>
+        <button type="submit" disabled={state.submitting} className="w-full bg-bethany-olive text-white py-4 md:py-5 rounded-2xl font-bold text-base md:text-lg hover:bg-bethany-earth transition-all shadow-xl shadow-bethany-olive/20 disabled:opacity-50 disabled:cursor-not-allowed">
+          {state.submitting ? '送出中...' : '送出預約申請'}
+        </button>
+      </form>
+    </div>
+  );
+}
 
 export default function App() {
   const { scrollYProgress } = useScroll();
@@ -505,32 +558,7 @@ export default function App() {
             </div>
           </div>
           
-          <div className="bg-bethany-cream p-10 md:p-16 rounded-[3rem]">
-            <h3 className="text-xl md:text-2xl font-bold mb-6 md:mb-8">預約諮詢</h3>
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest font-bold opacity-50">姓名</label>
-                  <input type="text" className="w-full bg-white border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-bethany-olive outline-none" placeholder="您的姓名" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest font-bold opacity-50">電話</label>
-                  <input type="tel" className="w-full bg-white border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-bethany-olive outline-none" placeholder="聯絡電話" />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <label className="text-xs uppercase tracking-widest font-bold opacity-50">單位 / 教會</label>
-                <input type="text" className="w-full bg-white border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-bethany-olive outline-none" placeholder="所屬單位" />
-              </div>
-              <div className="space-y-2">
-                <label className="text-xs uppercase tracking-widest font-bold opacity-50">預約需求</label>
-                <textarea className="w-full bg-white border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-bethany-olive outline-none h-32" placeholder="請簡述您的需求（如：預計人數、日期等）"></textarea>
-              </div>
-              <button className="w-full bg-bethany-olive text-white py-4 md:py-5 rounded-2xl font-bold text-base md:text-lg hover:bg-bethany-earth transition-all shadow-xl shadow-bethany-olive/20">
-                送出預約申請
-              </button>
-            </form>
-          </div>
+          <ContactForm />
         </div>
       </Section>
 
