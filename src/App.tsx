@@ -288,6 +288,112 @@ export default function App() {
               </div>
             </div>
           </div>
+
+          {/* Rose Garden Gallery */}
+          <div className="mt-20">
+            <div className="flex items-center gap-4 mb-6">
+              <span className="text-bethany-olive font-medium tracking-[0.2em] uppercase text-sm">Rose Garden</span>
+              <div className="flex-1 h-px bg-bethany-earth/20"></div>
+            </div>
+            <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-bethany-ink">園區玫瑰花園</h3>
+                <p className="text-bethany-ink/60 mt-3 text-base">園內精心培育各色玫瑰，四季花香飄逸，每一步都充滿神創造之美。</p>
+              </div>
+              <div className="flex gap-3 flex-shrink-0">
+                <div className="px-5 py-2 border border-bethany-earth/20 rounded-full text-sm font-medium">玫瑰步道</div>
+                <div className="px-5 py-2 border border-bethany-earth/20 rounded-full text-sm font-medium">四季花卉</div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+              {/* 碎石步道 - 寬幅 */}
+              <div className="md:col-span-8 group relative overflow-hidden rounded-[2.5rem] aspect-[16/9]">
+                <img
+                  src="/59A1EA78-3300-4DBE-BD34-0CFD6F1AD7D4_0.jpg"
+                  alt="綠蔭碎石步道"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-bethany-ink/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
+                  <div className="text-white">
+                    <h4 className="text-2xl font-bold">綠蔭碎石步道</h4>
+                    <p className="opacity-80">漫步於綠蔭小徑，感受大自然的靜謐，與造物主輕聲對話。</p>
+                  </div>
+                </div>
+              </div>
+              {/* 深紅玫瑰 */}
+              <div className="md:col-span-4 group relative overflow-hidden rounded-[2.5rem] aspect-[4/5]">
+                <img
+                  src="/88AC345C-A533-4507-8281-612F3AAA97C3_0.jpg"
+                  alt="深紅玫瑰"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-bethany-ink/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
+                  <div className="text-white">
+                    <h4 className="text-2xl font-bold">熱情深紅</h4>
+                    <p className="opacity-80">盛開的深紅玫瑰，象徵基督無限的愛與救贖恩典。</p>
+                  </div>
+                </div>
+              </div>
+              {/* 粉玫瑰 */}
+              <div className="md:col-span-3 group relative overflow-hidden rounded-[2.5rem] aspect-square">
+                <img
+                  src="/S__27476015_0_0.jpg"
+                  alt="粉嫩玫瑰"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-bethany-ink/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                  <div className="text-white">
+                    <h4 className="text-lg font-bold">粉嫩恩典</h4>
+                    <p className="opacity-80 text-sm">帶著晨露的粉玫瑰，訴說神每日更新的恩典。</p>
+                  </div>
+                </div>
+              </div>
+              {/* 黃橙玫瑰 */}
+              <div className="md:col-span-3 group relative overflow-hidden rounded-[2.5rem] aspect-square">
+                <img
+                  src="/S__27476016_0_0.jpg"
+                  alt="金橙玫瑰"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-bethany-ink/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                  <div className="text-white">
+                    <h4 className="text-lg font-bold">金橙頌讚</h4>
+                    <p className="opacity-80 text-sm">金橙色玫瑰在晨光中綻放，如同心中對主的頌讚。</p>
+                  </div>
+                </div>
+              </div>
+              {/* 花苞嫩葉 */}
+              <div className="md:col-span-3 group relative overflow-hidden rounded-[2.5rem] aspect-square">
+                <img
+                  src="/S__27476017_0_0.jpg"
+                  alt="玫瑰花苞"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-bethany-ink/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                  <div className="text-white">
+                    <h4 className="text-lg font-bold">生命萌發</h4>
+                    <p className="opacity-80 text-sm">含苞待放的玫瑰，象徵屬靈生命的成長與盼望。</p>
+                  </div>
+                </div>
+              </div>
+              {/* 白玫瑰 */}
+              <div className="md:col-span-3 group relative overflow-hidden rounded-[2.5rem] aspect-square">
+                <img
+                  src="/S__27476018_0_0.jpg"
+                  alt="白玫瑰"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-bethany-ink/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                  <div className="text-white">
+                    <h4 className="text-lg font-bold">潔白聖潔</h4>
+                    <p className="opacity-80 text-sm">純白玫瑰靜靜綻放，象徵神的聖潔與平安。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </Section>
 
