@@ -56,10 +56,10 @@ export default function App() {
   return (
     <div className="min-h-screen selection:bg-bethany-olive selection:text-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 md:px-12 bg-bethany-cream/80 backdrop-blur-md border-b border-bethany-earth/10">
-        <div className="flex items-center gap-3">
-          <LogoIcon className="w-8 h-8 text-bethany-olive" />
-          <span className="font-serif font-bold text-lg tracking-wider">屏東伯大尼靈修園</span>
+      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 py-3 md:px-12 md:py-4 bg-bethany-cream/80 backdrop-blur-md border-b border-bethany-earth/10">
+        <div className="flex items-center gap-2 md:gap-3">
+          <LogoIcon className="w-6 h-6 md:w-8 md:h-8 text-bethany-olive" />
+          <span className="font-serif font-bold text-sm md:text-lg tracking-wider">屏東伯大尼靈修園</span>
         </div>
         <div className="hidden md:flex gap-8 text-sm uppercase tracking-widest font-medium">
           <a href="#about" className="hover:text-bethany-olive transition-colors">關於</a>
@@ -68,9 +68,9 @@ export default function App() {
           <a href="#event" className="hover:text-bethany-olive transition-colors">活動</a>
           <a href="#contact" className="hover:text-bethany-olive transition-colors">聯絡</a>
         </div>
-        <a 
-          href="#contact" 
-          className="bg-bethany-olive text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-bethany-earth transition-all shadow-lg shadow-bethany-olive/20"
+        <a
+          href="#contact"
+          className="bg-bethany-olive text-white px-4 py-1.5 md:px-6 md:py-2 rounded-full text-xs md:text-sm font-medium hover:bg-bethany-earth transition-all shadow-lg shadow-bethany-olive/20"
         >
           預約空間
         </a>
